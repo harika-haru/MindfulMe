@@ -1,12 +1,12 @@
 body {
-    background-color: #EDE6D6;
+    background-color: #B0D9B1;
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     overflow-x: hidden;
 }
 
 nav {
-    background-color: #7ede81;
+    background-color:#A7D397;
     color: #fff;
     position: absolute;
     height: 75px;
@@ -81,7 +81,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 100px;
-    background-color: #e0fcb4;
+    background-color: #ECE3CE;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-top: 7rem;

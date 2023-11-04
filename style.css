@@ -1,12 +1,12 @@
 body {
-    background-color: #EDE6D6;
+    background-color: #B0D9B1;
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     overflow-x: hidden;
 }
 
 nav {
-    background-color: #7ede81;
+    background-color: #A7D397;
     color: #fff;
     position: absolute;
     height: 75px;
@@ -40,7 +40,7 @@ ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #7ede81;
+    background-color: #005a03;
 }
 
 
@@ -97,7 +97,7 @@ ul.navbar li a {
 }
 
 .quote-box {
-    background-color: #64473A;
+    background-color: #57643a;
     color: white;
     text-align: center;
     position: absolute;
