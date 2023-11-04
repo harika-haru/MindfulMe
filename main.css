@@ -1,0 +1,169 @@
+body {
+    background-color: #EDE6D6;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #7ede81;
+    color: #fff;
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #0a0505;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    padding-left: 40px;
+}
+
+nav ul a:hover {
+    color: #f9fffe;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #7ede81;
+}
+
+
+ul.navbar li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.logo {
+    float: left;
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: -15px;
+    left: 2%;
+}
+
+header {
+    color: #0c0b0b;
+    text-align: center;
+    position: absolute;
+    top: 8rem;
+    left: 40%;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #e0fcb4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 7rem;
+}
+
+textarea, input, button {
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.entries ul, .to-do-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.entries li, .to-do-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.progress-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+.to-do-list {
+    position: relative;
+}
+
+#progress-bar {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    width: 97%;
+    border-radius: 0;
+    height: 10px;
+    background-color: transparent;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #ddd;
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: #4caf50;
+}

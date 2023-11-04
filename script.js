@@ -1,60 +1,26 @@
 
-function myFunction() {
-    window.location.href = "main.html";
-}
-function incrementStepCount() {
-    stepCount++;
-    document.getElementById("step-count").innerText = stepCount;
-}
 
-function incrementWaterAmount() {
-    waterAmount += 250; // Increment water by 250ml
-    document.getElementById("water-amount").innerText = waterAmount;
-}
+// Test Assessment
+function calculateScore() {
+    const form = document.getElementById('questionnaireForm');
+    const inputs = form.querySelectorAll('input:checked');
+    let score = 0;
 
-function saveJournalEntry() {
-    const journalEntryText = document.getElementById("journal-entry").value;
-    if (journalEntryText.trim() === "") {
-        alert("Please enter a journal entry.");
-        return;
-    }
+    inputs.forEach(input => {
+        score += parseInt(input.value);
+    });
 
-    const timestamp = new Date().toLocaleString();
-    const journalEntry = {
-        text: journalEntryText,
-        timestamp: timestamp,
-    };
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
 
-    // Create a new journal entry
-    createJournalEntry(journalEntry);
-
-    // Clear the input field
-    document.getElementById("journal-entry").value = "";
-}
-
-function createJournalEntry(entry) {
-    const journalList = document.getElementById("journal-list");
-    const li = document.createElement("li");
-    li.innerHTML = `
-        <p>${entry.text}</p>
-        <small>${entry.timestamp}</small>
-        <button onclick="deleteJournalEntry(this)">Delete</button>
-    `;
-    journalList.appendChild(li);
-}
-
-function deleteJournalEntry(button) {
-    const li = button.parentElement;
-    li.remove();
-}
-
-function addTodoTask() {
-    const taskText = document.getElementById("new-task").value;
-    if (taskText) {
-        const todoList = document.getElementById("todo-list");
-        const li = document.createElement("li");
-        li.innerText = taskText;
-        todoList.appendChild(li);
-        document.getElementById("new-task").value = "";
+    if (score >= 5) {
+        progressBar.style.width = '100%';
+        progressText.textContent = 'Severe Depression';
+    } else if (score >= 3) {
+        progressBar.style.width = '60%';
+        progressText.textContent = 'Moderate Depression';
+    } else {
+        progressBar.style.width = '30%';
+        progressText.textContent = 'Mild Depression';
     }
 }

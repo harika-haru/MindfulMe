@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="icon" type="image/x-icon" href="favi.png">
     <title>MindfulMe</title>
 </head>
+
 <body>
+
     <!--Nav Bar-->
     <nav>
         <ul>
@@ -19,12 +22,49 @@
         </ul>
     </nav>
 
+    <!--Logo-->
     <div>
-        <img src="logo.png" alt="logo" class="logo">
+        <img src="images/logo.png" alt="logo" class="logo">
     </div>
-    <!--ChatBot-->
+
+    <header>
+        <h1>Mental Health Journal</h1>
+    </header>
+    <main>
+        <div class="journal-entry">
+            <h2>New Entry</h2>
+            <textarea id="journal-text" rows="10"></textarea>
+            <button onclick="saveJournalEntry()">Save</button>
+        </div>
+        <div class="entries">
+            <h2>Previous Entries</h2>
+            <ul id="entry-list"></ul>
+        </div>
+        <div class="step-tracker">
+            <h2>Step Tracker</h2>
+            <input type="number" id="step-count" min="0" value="0">
+            <button onclick="saveStepCount()">Save Steps</button>
+        </div>
+        <div class="water-tracker">
+            <h2>Water Tracker</h2>
+            <input type="number" id="water-amount" min="0" value="0">
+            <button onclick="saveWaterIntake()">Save Water Intake</button>
+        </div>
+        <div class="to-do-list">
+            <h2>To-Do List</h2>
+            <input type="text" id="todo-item" placeholder="Enter a task">
+            <button onclick="addToDo()">Add Task</button>
+            <ul id="todo-list"></ul>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+    </main>
+
+    <!--ChatBot
     <iframe class="chatbot" width="350" height="450" allow="microphone;"
         src="https://console.dialogflow.com/api-client/demo/embedded/f1b39d7c-4d87-4c0b-bf06-1cb8f21bc04c"></iframe>
 
+    <script src="script.js"></script> -->
+
 </body>
+
 </html>
