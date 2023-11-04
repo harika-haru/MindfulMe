@@ -81,7 +81,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 100px;
-    background-color: #ECE3CE;
+    background-color: rgb(125, 182, 161);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-top: 7rem;
