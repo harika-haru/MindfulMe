@@ -85,7 +85,7 @@ ul.navbar li a {
 }
 
 .gradient-box {
-    background: linear-gradient(to right, #FFFFDD, #D2DE32);
+    background-color: #B0D9B1;
     border-radius: 10px;
     padding: 20px;
 }
@@ -168,10 +168,21 @@ ul.navbar li a {
 .quiz {
     position: absolute;
     top: 105rem;
-    left: 45%;
+    left: 35%;
 }
 
-h1 {
+.quiz h1 {
+    font-size: 24px;
+    color: #000000;
+}
+
+.stress {
+    position: absolute;
+    top: 105rem;
+    left: 55%;
+}
+
+.stress h1 {
     font-size: 24px;
     color: #000000;
 }
@@ -226,7 +237,7 @@ h3 {
 form {
     display: flex;
     align-items: center;
-    
+
 }
 
 input[type="email"] {
@@ -234,7 +245,7 @@ input[type="email"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    
+
 }
 
 button[type="submit"] {
@@ -249,3 +260,84 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+.topic {
+    margin-left: 5rem;
+}
+
+.topic h1 {
+    position: absolute;
+    top: 100px;
+    left: 118px;
+
+}
+
+.letters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    width: 40%;
+    padding-left: 40px;
+    line-height-step: 1.5;
+
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 2px;
+    padding-left: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.symptoms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.icons {
+    align-items: center;
+    border-radius: 7px;
+    width: 120px;
+    margin-left: 22px;
+}
+
+.size {
+    width: 80%;
+    height: 80%;
+}
+
+.size1 {
+    margin-top: -10px;
+    width: 85%;
+    height: 90%;
+    margin-top: 1rem;
+}
+.topics {
+    cursor: pointer;
+  }
+  
+  .topic-content {
+    display: none;
+    margin-left: 25px;
+  }
+  
+  h2 {
+    color: #000000;
+  }
+  
+  p {
+    margin: 10px 0;
+  }

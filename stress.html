@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stress.css">
+    <link rel="icon" type="image/x-icon" href="images/favi.png">
+    <title>MindfulMe</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Service">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="comfort-zone.html">Safe Space</a></li>
+        </ul>
+    </nav>
+        <!--Logo-->
+        <div>
+            <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+
+        <div class="container">
+            <h1>Stress Assessment Quiz</h1>
+            <form id="stressassessment">
+                <div class="question">
+                    <label for="q1">In the past week, how often have you felt stressed or anxious?</label>
+                    <input  type="radio" name="q1" value="0"> Not at all
+                    <input type="radio" name="q1" value="35"> Several days
+                    <input type="radio" name="q1" value="75"> More than half the days
+                    <input type="radio" name="q1" value="100"> Nearly every day
+                </div>
+                <br>
+                <div class="question">
+                    <label for="q2">How often have you had trouble sleeping due to stress?</label>
+                    <input type="radio" name="q2" value="0"> Not at all
+                    <input type="radio" name="q2" value="35"> Several days
+                    <input type="radio" name="q2" value="75"> More than half the days
+                    <input type="radio" name="q2" value="100"> Nearly every day
+                </div>
+                <br>
+                <div class="question">
+                    <label for="q3">How often have you had trouble concentrating due to stress?</label>
+                    <input type="radio" name="q3" value="0"> Not at all
+                    <input type="radio" name="q3" value="35"> Several days
+                    <input type="radio" name="q3" value="75"> More than half the days
+                    <input type="radio" name="q3" value="100"> Nearly every day
+                </div>
+                <br>
+                <div class="question">
+                    <label for="q4">How often have you felt overwhelmed by stress?</label>
+                    <input type="radio" name="q4" value="0"> Not at all
+                    <input type="radio" name="q4" value="35"> Several days
+                    <input type="radio" name="q4" value="75"> More than half the days
+                    <input type="radio" name="q4" value="100"> Nearly every day
+                </div>
+                <br>
+                <div class="question">
+                    <label for="q5">How often have you felt physically ill due to stress?</label>
+                    <input type="radio" name="q5" value="0"> Not at all
+                    <input type="radio" name="q5" value="35"> Several days
+                    <input type="radio" name="q5" value="75"> More than half the days
+                    <input type="radio" name="q5" value="100"> Nearly every day
+                </div>
+                <br>
+                <div class="question">
+                    <label for="q6">Over the last two weeks, how often have you felt that you are a failure or have let
+                        yourself or your family down?</label>
+                    <input type="radio" name="q6" value="0"> Not at all
+                    <input type="radio" name="q6" value="35"> Several days
+                    <input type="radio" name="q6" value="75"> More than half the days
+                    <input type="radio" name="q6" value="100"> Nearly every day
+                </div>
+                <br>
+                <div class="question">
+                    <label for="q7">Over the last two weeks, how often have you had trouble concentrating on things, such as
+                        reading a book or watching TV?</label>
+                    <input type="radio" name="q7" value="0"> Not at all
+                    <input type="radio" name="q7" value="35"> Several days
+                    <input type="radio" name="q7" value="75"> More than half the days
+                    <input type="radio" name="q7" value="100"> Nearly every day
+                </div>
+                <br>
+                <div class="question">
+                    <label for="q8">Over the last two weeks, how often have you had thoughts that you would be better off
+                        dead or of hurting yourself in some way?</label>
+                    <input type="radio" name="q8" value="0"> Not at all
+                    <input type="radio" name="q8" value="35"> Several days
+                    <input type="radio" name="q8" value="75"> More than half the days
+                    <input type="radio" name="q8" value="100"> Nearly every day
+                </div>
+                <button type="button" onclick="calculateScore()">Submit</button>
+            </form>
+            <div class="progress">
+                <div id="progressBar"></div>
+                <div id="progressText"></div>
+            </div>
+        </div>
+        <script>
+        </script>
+    <script src="script.js"></script>
+</body>
+</html>

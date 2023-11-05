@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favi.png">
     <title>MindfulMe</title>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -14,14 +16,123 @@
             <li><a href="#About">About</a></li>
             <li><a href="#Service">Services</a></li>
             <li><a href="#Contact">Contact</a></li>
-            <li><a href="comfort-zone.html">Safe Space</a></li>
+            <li><a href="main.html">Back</a></li>
         </ul>
     </nav>
     <!--Logo-->
     <div>
         <img src="images/logo.png" alt="logo" class="logo">
     </div>
+    <!--ChatBot -->
+    <iframe class="chatbot" width="350" height="450" allow="microphone;"
+        src="https://console.dialogflow.com/api-client/demo/embedded/f1b39d7c-4d87-4c0b-bf06-1cb8f21bc04c"></iframe>
 
-    
+    <div class="topic">
+        <h1>Mental Health A-Z</h1>
+        <div class="letters">
+            <div class="letter" onclick="toggleTopic('A-topics')">A</div>
+            <div class="letter" onclick="toggleTopic('B-topics')">B</div>
+            <div class="letter" onclick="toggleTopic('C-topics')">C</div>
+            <div class="letter" onclick="toggleTopic('D-topics')">D</div>
+            <div class="letter" onclick="toggleTopic('E-topics')">E</div>
+            <div class="letter" onclick="toggleTopic('F-topics')">F</div>
+            <div class="letter" onclick="toggleTopic('G-topics')">G</div>
+            <div class="letter" onclick="toggleTopic('H-topics')">H</div>
+            <div class="letter" onclick="toggleTopic('I-topics')">I</div>
+            <div class="letter" onclick="toggleTopic('J-topics')">J</div>
+            <div class="letter" onclick="toggleTopic('K-topics')">K</div>
+            <div class="letter" onclick="toggleTopic('L-topics')">L</div>
+            <div class="letter" onclick="toggleTopic('M-topics')">M</div>
+            <div class="letter" onclick="toggleTopic('N-topics')">N</div>
+            <div class="letter" onclick="toggleTopic('O-topics')">O</div>
+            <div class="letter" onclick="toggleTopic('P-topics')">P</div>
+            <div class="letter" onclick="toggleTopic('Q-topics')">Q</div>
+            <div class="letter" onclick="toggleTopic('R-topics')">R</div>
+            <div class="letter" onclick="toggleTopic('S-topics')">S</div>
+            <div class="letter" onclick="toggleTopic('T-topics')">T</div>
+            <div class="letter" onclick="toggleTopic('U-topics')">U</div>
+            <div class="letter" onclick="toggleTopic('V-topics')">V</div>
+            <div class="letter" onclick="toggleTopic('W-topics')">W</div>
+            <div class="letter" onclick="toggleTopic('X-topics')">X</div>
+            <div class="letter" onclick="toggleTopic('Y-topics')">Y</div>
+            <div class="letter" onclick="toggleTopic('Z-topics')">Z</div>
+        </div>
+    </div>
+
+    <div class="symptoms">
+        <div class="icons">
+            <img src="images/image3.png" class="size">
+            <p>Mediatation</p>
+        </div>
+        <div class="icons">
+            <img src="images/image4.png" class="size">
+            <p>Brain Health</p>
+        </div>
+        <div class="icons">
+            <img src="images/image5.png" class="size">
+            <p>ADHD</p>
+        </div>
+        <div class="icons">
+            <img src="images/image6.png" class="size">
+            <p>Anxiety</p>
+        </div>
+        <div class="icons" style="margin-top: -1rem;">
+            <img src="images/image7.png" class="size1">
+            <p>Psychology</p>
+        </div>
+        <div class="icons" style="margin-top: -1rem;">
+            <img src="images/image8.png" class="size1">
+            <p>Addition</p>
+        </div>
+    </div>
+
+    <div class="topics">
+        <div class="topic-content" id="A-topics">
+            <h2>Anxiety</h2>
+            <p>Anxiety is a mental health condition characterized by excessive worry, fear, and tension. It can affect
+                daily life and well-being.</p>
+            <h2>ADHD</h2>
+            <p>Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder that affects both
+                children and adults. </p>
+            <h2>Anorexia nervosa</h2>
+            <p>The symptoms and causes of anorexia, what help is available and ways you can look after yourself. </p>
+        </div>
+
+        <div class="topic-content" id="B-topics">
+            <h2>Bipolar</h2>
+            <p>This involves at least one manic episode, which may be followed by a major depressive episode.</p>
+            <h2>Body Image</h2>
+            <p>Body image refers to a person's perceptions, thoughts, and feelings about their physical appearance.</p>
+            <h2>Bulimia nervosa</h2>
+            <p>Bulimia nervosa, often known as bulimia, involves episodes of binge eating followed by compensatory
+                behaviors like vomiting, exercise, or laxatives.</p>
+        </div>
+
+        <div class="topic-content" id="C-topics">
+            <h2>CBT</h2>
+            <p>TCognitive-Behavioral Therapy (CBT) is a psychotherapy approach that focuses on helping individuals
+                identify and change unhelpful thought patterns and behaviors.</p>
+            <h2>Crisis care</h2>
+            <p>Crisis care refers to immediate and short-term intervention and support provided to individuals who are experiencing acute psychological, emotional, or situational distress.</p>
+            <h2>Bulimia nervosa</h2>
+            <p>Bulimia nervosa, often known as bulimia, involves episodes of binge eating followed by compensatory
+                behaviors like vomiting, exercise, or laxatives.</p>
+        </div>
+
+
+
+        <div class="topic-content" id="D-topics">
+            <h2>D - Depression</h2>
+            <p>Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest in
+                activities.</p>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>
