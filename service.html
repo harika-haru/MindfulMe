@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favi.png">
+    <title>MindfulMe</title>
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #488615;
+    font-family: Arial, sans-serif;;
+    color: #fff;
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #0a0505;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    padding-left: 40px;
+}
+
+nav ul a:hover {
+    color: #f9fffe;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #005a03;
+}
+
+
+ul.navbar li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.logo {
+    float: left;
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: -15px;
+    left: 2%;
+}
+
+header{
+    margin-top: 8rem;
+
+} 
+.questions{
+    margin-bottom: 40px;
+    background-color: #84b97d;
+    border-radius: 20px;
+}
+.result {
+    margin-bottom: 40px;
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 5rem;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.5; 
+    word-spacing: 4px;
+}
+
+label {
+    margin: 0 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li> <a href="main.html">Back</a></li>
+        </ul>
+    </nav>
+    <!--Logo-->
+    <div>
+        <img src="images/logo.png" alt="logo" class="logo">
+    </div>
+    <header>
+        <h1>When to See a Therapist</h1>
+        <p>Take this questionnaire to assess your mental health</p>
+    </header>
+    <section class="questions">
+        <form id="therapistQuestionnaire">
+            <br>
+            <div class="question">
+                <p style="word-spacing: 4px;">Have you been experiencing persistent feelings of sadness, hopelessness, or low mood?</p>
+                <label><input type="radio" name="q1" value="Yes">Yes</label>
+                <label><input type="radio" name="q1" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have you noticed a significant change in your sleep patterns (too much or too little) over the past few weeks?</p>
+                <label><input type="radio" name="q2" value="Yes">Yes</label>
+                <label><input type="radio" name="q2" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Are you finding it difficult to concentrate or make decisions in your daily life?</p>
+                <label><input type="radio" name="q3" value="Yes">Yes</label>
+                <label><input type="radio" name="q3" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have you lost interest or pleasure in activities that you used to enjoy?</p>
+                <label><input type="radio" name="q4" value="Yes">Yes</label>
+                <label><input type="radio" name="q4" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Do you frequently experience overwhelming anxiety or panic attacks?</p>
+                <label><input type="radio" name="q5" value="Yes">Yes</label>
+                <label><input type="radio" name="q5" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have you been avoiding social interactions or isolating yourself from others?</p>
+                <label><input type="radio" name="q6" value="Yes">Yes</label>
+                <label><input type="radio" name="q6" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have you noticed a change in your appetite (significant weight loss or gain) without trying to do so?</p>
+                <label><input type="radio" name="q7" value="Yes">Yes</label>
+                <label><input type="radio" name="q7" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Are you struggling with intrusive or obsessive thoughts that are causing distress?</p>
+                <label><input type="radio" name="q8" value="Yes">Yes</label>
+                <label><input type="radio" name="q8" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have you experienced a traumatic event that continues to affect you emotionally?</p>
+                <label><input type="radio" name="q9" value="Yes">Yes</label>
+                <label><input type="radio" name="q9" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Do you have difficulty managing anger or controlling your temper?</p>
+                <label><input type="radio" name="q10" value="Yes">Yes</label>
+                <label><input type="radio" name="q10" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Are you engaging in self-destructive behaviors, such as self-harm or substance abuse?</p>
+                <label><input type="radio" name="q11" value="Yes">Yes</label>
+                <label><input type="radio" name="q11" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have you been experiencing relationship difficulties that are causing significant distress?</p>
+                <label><input type="radio" name="q12" value="Yes">Yes</label>
+                <label><input type="radio" name="q12" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Do you have thoughts of hurting yourself or others?</p>
+                <label><input type="radio" name="q13" value="Yes">Yes</label>
+                <label><input type="radio" name="q13" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have you been feeling overwhelmed and unable to cope with life's challenges?</p>
+                <label><input type="radio" name="q14" value="Yes">Yes</label>
+                <label><input type="radio" name="q14" value="No">No</label>
+            </div>
+
+            <div class="question">
+                <p>Have others expressed concern about your mental health or well-being?</p>
+                <label><input type="radio" name="q15" value="Yes">Yes</label>
+                <label><input type="radio" name="q15" value="No">No</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section class="result" id="result" style="display: none;">
+        <h2>Your Assessment:</h2>
+        <p id="assessmentResult"></p>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const questionnaire = document.getElementById('therapistQuestionnaire');
+    const resultSection = document.getElementById('result');
+    const assessmentResult = document.getElementById('assessmentResult');
+
+    questionnaire.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const answers = {};
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(function(question, index) {
+            const radioButtons = question.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(function(button) {
+                if (button.checked) {
+                    answers[`q${index + 1}`] = button.value;
+                }
+            });
+        });
+
+        const assessment = assessMentalHealth(answers);
+
+        displayAssessment(assessment);
+    });
+
+    function assessMentalHealth(answers) {
+        const yesCount = Object.values(answers).filter(val => val === 'Yes').length;
+
+        if (yesCount >= 3) {
+            return 'It is recommended to seek the advice of a therapist.';
+        } else {
+            return 'Based on your responses, you may not need immediate professional intervention. However, it is important to monitor your mental health and seek help if needed.';
+        }
+    }
+
+    function displayAssessment(assessment) {
+        assessmentResult.textContent = assessment;
+        resultSection.style.display = 'block';
+    }
+});
+
+    </script>
+</body>
+</html>

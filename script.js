@@ -68,33 +68,39 @@ function updateProgressBar() {
     }
 }
 
-// Test Assessment
+//  Depression Test Assessment
 
 function calculateScores() {
+    // Get the form and all checked inputs
     const form = document.getElementById('questionnaireForm');
     const inputs = form.querySelectorAll('input:checked');
+    
+    // Initialize the score
     let score = 0;
 
+    // Calculate the score
     inputs.forEach(input => {
         score += parseInt(input.value);
     });
-    console.log(score);
-    score=score/8;
 
+    // Display the score for debugging purposes
+    console.log(score);
+
+    // Get the progress elements
     const progressBar = document.getElementById('progressBar');
     const progressText = document.getElementById('progressText');
 
-    if (score >= 100) {
+    // Set progress based on the score
+    if (score >= 650) {
         progressBar.style.width = '100%';
         progressText.textContent = 'Severe Depression';
-    } else if (score <= 75) {
+    } else if (score >= 600) {  // Changed this condition to >= for consistency
         progressBar.style.width = '60%';
         progressText.textContent = 'Moderate Depression';
-    } else if(score <=35){
+    } else if (score >= 200) {  // Changed this condition to >= for consistency
         progressBar.style.width = '30%';
         progressText.textContent = 'Mild Depression';
-    }
-    else{
+    } else {
         progressBar.style.width = '0%';
         progressText.textContent = 'No Depression';
     }
@@ -102,45 +108,51 @@ function calculateScores() {
 
 
 // Stress 
+
 function calculateScore() {
+    // Get the form and all checked inputs
     const form = document.getElementById('stressassessment');
     const inputs = form.querySelectorAll('input:checked');
+    
+    // Initialize the score
     let score = 0;
 
-    score=score/8;
-
+    // Calculate the score
     inputs.forEach(input => {
         score += parseInt(input.value);
     });
 
+    // Display the score for debugging purposes
     console.log(score);
-    score=score/8;
 
+    // Get the progress elements
     const progressBar = document.getElementById('progressBar');
     const progressText = document.getElementById('progressText');
 
-    if (score >=100) {
+    // Set progress based on the score
+    if (score >= 650) {
         progressBar.style.width = '100%';
-        progressText.textContent = 'Severe Stress';
-    } else if (score <= 75) {
+        progressText.textContent = 'High Stress';
+    } else if (score >= 600) {  // Changed this condition to >= for consistency
         progressBar.style.width = '60%';
         progressText.textContent = 'Moderate Stress';
-    } else if(score <=35){
+    } else if (score >= 200) {  // Changed this condition to >= for consistency
         progressBar.style.width = '30%';
-        progressText.textContent = 'Mild Stress';
-    }
-    else{
+        progressText.textContent = 'Low Stress';
+    } else {
         progressBar.style.width = '0%';
         progressText.textContent = 'No Stress';
     }
 }
 
+
 // Hide and show
-  function toggleTopic(topicId) {
-            var topicContent = document.getElementById(topicId);
-            if (topicContent.style.display === "none") {
-                topicContent.style.display = "block";
-            } else {
-                topicContent.style.display = "none";
-            }
-        }
+function toggleTopic(topicId) {
+    var topicContent = document.getElementById(topicId);
+    if (topicContent.style.display === "none") {
+        topicContent.style.display = "block";
+    } else {
+        topicContent.style.display = "none";
+    }
+}
+// therapy

@@ -1,12 +1,13 @@
 body {
-    background-color: #B0D9B1;
+    background-color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     overflow-x: hidden;
 }
 
 nav {
-    background-color: #A7D397;
+    background-color: 	#488615;
+    font-family: Arial, sans-serif;;
     color: #fff;
     position: absolute;
     height: 75px;
@@ -68,7 +69,14 @@ ul.navbar li a {
     top: -15px;
     left: 2%;
 }
-
+.info{
+    background-color: #7ede81;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 75rem;
+}
 .img {
     width: 2400px;
     height: 400px;
@@ -85,7 +93,7 @@ ul.navbar li a {
 }
 
 .gradient-box {
-    background-color: #B0D9B1;
+    background-color: #9bca26;
     border-radius: 10px;
     padding: 20px;
 }
@@ -96,28 +104,6 @@ ul.navbar li a {
     left: 75%;
 }
 
-.quote-box {
-    background-color: #57643a;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 47rem;
-    width: 100%;
-    height: 26%;
-    max-width: 100%;
-}
-
-.quote-box p {
-    font-family: Arial, sans-serif;
-    font-size: 32px;
-    font-weight: bolder;
-    word-spacing: 2px;
-    line-height: 1.5;
-    margin-left: 15%;
-    margin-right: 20%;
-    width: 70%;
-
-}
 
 .box1 {
     position: absolute;
@@ -138,37 +124,13 @@ ul.navbar li a {
     width: 70%;
 }
 
-.grp {
-    position: absolute;
-    top: 80rem;
-    width: 50%;
-    margin-left: 100px;
-    max-width: 100%;
-}
 
-.grp h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-}
 
-.grp p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    width: 65%;
-}
-
-.img2 {
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    top: 80rem;
-    left: 700px;
-}
 
 .quiz {
     position: absolute;
-    top: 105rem;
-    left: 35%;
+    top: 76rem;
+    left: 738px;
 }
 
 .quiz h1 {
@@ -178,8 +140,8 @@ ul.navbar li a {
 
 .stress {
     position: absolute;
-    top: 105rem;
-    left: 55%;
+    top: 76rem;
+    left: 1070px;
 }
 
 .stress h1 {
@@ -206,7 +168,7 @@ footer {
     background-color: #333;
     color: #fff;
     position: absolute;
-    top: 120rem;
+    top: 92rem;
     width: 100%;
 }
 
@@ -325,19 +287,20 @@ button[type="submit"]:hover {
     height: 90%;
     margin-top: 1rem;
 }
+
 .topics {
     cursor: pointer;
-  }
-  
-  .topic-content {
+}
+
+.topic-content {
     display: none;
     margin-left: 25px;
-  }
-  
-  h2 {
+}
+
+h2 {
     color: #000000;
-  }
-  
-  p {
+}
+
+p {
     margin: 10px 0;
-  }
+}
