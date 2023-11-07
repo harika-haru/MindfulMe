@@ -17,4 +17,4 @@ MindfulMe is a mental health awareness website designed to help users explore va
 - **Chatbot Support:** MindfulMe's chatbot provides recommendations for books and podcasts related to mental health, as well as motivational content to inspire and uplift users.
 
 ## Website Link
-To explore MindfulMe and its features, please visit the website at [MindfulMe Website](https://mindfulmee.netlify.app/).
+To explore MindfulMe and its features, please visit the website at [MindfulMe](https://mindfulmee.netlify.app/).
