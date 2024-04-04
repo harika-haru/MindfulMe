@@ -4,7 +4,25 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
+.logo {
+    width: 500px; /* Adjust the width and height as needed */
+    height: 500px;
+    background-image: url('images/logo.png'); /* Initial image */
+    background-size: cover;
+    animation: changeIntensity 5s infinite alternate; /* Change intensity every 5 seconds */
+}
 
+@keyframes changeIntensity {
+    0% {
+        filter: contrast(100%); /* Initial intensity */
+    }
+    50% {
+        filter: contrast(70%); /* Half intensity */
+    }
+    100% {
+        filter: contrast(100%); /* Back to full intensity */
+    }
+}
 nav {
     background-color: 	#488615;
     font-family: Arial, sans-serif;;

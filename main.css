@@ -68,6 +68,19 @@ ul.navbar li a {
     position: absolute;
     top: -15px;
     left: 2%;
+    background-size: cover;
+    animation: changeIntensity 5s infinite alternate;
+}
+@keyframes changeIntensity {
+    0% {
+        filter: contrast(100%); /* Initial intensity */
+    }
+    50% {
+        filter: contrast(50%); /* Half intensity */
+    }
+    100% {
+        filter: contrast(100%); /* Back to full intensity */
+    }
 }
 
 header {
