@@ -112,7 +112,7 @@
             left: 2%;
         }
 
-        .container-str {
+        .container-gd {
             max-width: 600px;
             margin: 100px auto;
             padding: 20px;
@@ -123,14 +123,18 @@
 
         h1 {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         form {
             margin-bottom: 20px;
         }
 
+        p {
+            font-size: 18px;
+        }
+
         ol {
-            list-style-type: none;
             padding: 0;
         }
 
@@ -172,7 +176,7 @@
             text-align: center;
         }
     </style>
-     <nav>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#About">About</a></li>
@@ -186,80 +190,72 @@
     <!--Logo-->
     <div class="logo">
     </div>
-
-    <div class="container-str">
-        <h1>Stress Assessment</h1>
-        <form id="stressAssessmentForm">
-            <p>Please rate how often you have experienced each of the following situations over the past month:</p>
+    <div class="container-gd">
+        <h1>GAD-7 Questionnaire</h1>
+        <form id="gad7Form">
+            <p>Over the last 2 weeks, how often have you been bothered by the following problems?</p>
             <ol>
                 <li>
-                    <label for="q1">Work-related stress:</label>
+                    <label for="q1">Feeling nervous, anxious, or on edge:</label>
                     <select id="q1">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q2">Financial stress:</label>
+                    <label for="q2">Not being able to stop or control worrying:</label>
                     <select id="q2">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q3">Family-related stress:</label>
+                    <label for="q3">Worrying too much about different things:</label>
                     <select id="q3">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q4">Relationship-related stress:</label>
+                    <label for="q4">Trouble relaxing:</label>
                     <select id="q4">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q5">Health-related stress:</label>
+                    <label for="q5">Being so restless that it's hard to sit still:</label>
                     <select id="q5">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q6">Academic-related stress (if applicable):</label>
+                    <label for="q6">Becoming easily annoyed or irritable:</label>
                     <select id="q6">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q7">Other stressors:</label>
+                    <label for="q7">Feeling afraid as if something awful might happen:</label>
                     <select id="q7">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
             </ol>
@@ -268,7 +264,6 @@
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
-
 
 </body>
 

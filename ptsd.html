@@ -112,7 +112,7 @@
             left: 2%;
         }
 
-        .container-str {
+        .container-ptsd {
             max-width: 600px;
             margin: 100px auto;
             padding: 20px;
@@ -172,94 +172,117 @@
             text-align: center;
         }
     </style>
-     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li> <a href="main.html">Self Care</a></li>
-            <li> <a href="comfort-zone.html">Safe Space</a></li>
-            <li class="back-button"><a href="#" onclick="history.go(-1);"><span>&larr;</span> Back</a></li>
-        </ul>
+
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li> <a href="main.html">Self Care</a></li>
+        <li> <a href="comfort-zone.html">Safe Space</a></li>
+        <li class="back-button"><a href="#" onclick="history.go(-1);"><span>&larr;</span> Back</a></li>
+    </ul>
     </nav>
     <!--Logo-->
     <div class="logo">
     </div>
-
-    <div class="container-str">
-        <h1>Stress Assessment</h1>
-        <form id="stressAssessmentForm">
-            <p>Please rate how often you have experienced each of the following situations over the past month:</p>
+    <div class="container-ptsd">
+        <h1>PTSD Checklist</h1>
+        <form id="ptsdChecklistForm">
+            <p>Please indicate how much you have been bothered by each of the following problems in the past month:</p>
             <ol>
                 <li>
-                    <label for="q1">Work-related stress:</label>
+                    <label for="q1">Repeated, disturbing memories, thoughts, or images of a stressful
+                        experience:</label>
                     <select id="q1">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q2">Financial stress:</label>
+                    <label for="q2">Avoiding activities or situations because they remind you of a stressful
+                        experience:</label>
                     <select id="q2">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q3">Family-related stress:</label>
+                    <label for="q3">Trouble remembering important parts of a stressful experience:</label>
                     <select id="q3">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q4">Relationship-related stress:</label>
+                    <label for="q4">Feeling very upset when something reminded you of a stressful experience:</label>
                     <select id="q4">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q5">Health-related stress:</label>
+                    <label for="q5">Feeling distant or cut off from other people:</label>
                     <select id="q5">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q6">Academic-related stress (if applicable):</label>
+                    <label for="q6">Feeling emotionally numb or being unable to have loving feelings for those close to
+                        you:</label>
                     <select id="q6">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q7">Other stressors:</label>
+                    <label for="q7">Feeling as if your future will somehow be cut short:</label>
                     <select id="q7">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="q8">Trouble falling or staying asleep:</label>
+                    <select id="q8">
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="q9">Feeling irritable or having angry outbursts:</label>
+                    <select id="q9">
+                        <option value="0">Not at all</option>
+                        <option value="1">A little bit</option>
+                        <option value="2">Moderately</option>
+                        <option value="3">Quite a bit</option>
+                        <option value="4">Extremely</option>
                     </select>
                 </li>
             </ol>

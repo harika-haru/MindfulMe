@@ -1,12 +1,12 @@
 body {
-    background-color: #B0D9B1;
+    background-color: #FBF1EE;;
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     overflow-x: hidden;
 }
 
 nav {
-    background-color:#488615;
+    background-color:#ffede8;
     color: #fff;
     font-family: Arial, sans-serif;;
     position: absolute;
@@ -34,7 +34,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-    color: #f9fffe;
+    color: #013206dc;
 }
 
 ul.navbar {

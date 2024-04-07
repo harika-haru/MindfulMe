@@ -112,7 +112,7 @@
             left: 2%;
         }
 
-        .container-str {
+        .container-bi {
             max-width: 600px;
             margin: 100px auto;
             padding: 20px;
@@ -172,7 +172,7 @@
             text-align: center;
         }
     </style>
-     <nav>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#About">About</a></li>
@@ -186,80 +186,77 @@
     <!--Logo-->
     <div class="logo">
     </div>
-
-    <div class="container-str">
-        <h1>Stress Assessment</h1>
-        <form id="stressAssessmentForm">
-            <p>Please rate how often you have experienced each of the following situations over the past month:</p>
+    <div class="container-bi">
+        <h1>Bipolar Disorder Screening</h1>
+        <form id="bipolarScreeningForm">
+            <p>Please answer the following questions based on your experiences over the past year:</p>
             <ol>
                 <li>
-                    <label for="q1">Work-related stress:</label>
+                    <label for="q1">Have there been times when you were not your usual self and you were so irritable
+                        that you shouted at people or started fights or arguments?</label>
                     <select id="q1">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q2">Financial stress:</label>
+                    <label for="q2">Have you ever felt much more self-confident than usual?</label>
                     <select id="q2">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q3">Family-related stress:</label>
+                    <label for="q3">Have you ever been much more talkative or spoken much faster than usual?</label>
                     <select id="q3">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q4">Relationship-related stress:</label>
+                    <label for="q4">Have you ever been so easily distracted by things around you that you had trouble
+                        concentrating or staying on track?</label>
                     <select id="q4">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q5">Health-related stress:</label>
+                    <label for="q5">Have you ever had periods of time when you felt much more self-important or full of
+                        yourself than usual?</label>
                     <select id="q5">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q6">Academic-related stress (if applicable):</label>
+                    <label for="q6">Have you ever had periods of time when you needed much less sleep than
+                        usual?</label>
                     <select id="q6">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q7">Other stressors:</label>
+                    <label for="q7">Have you ever been much more active or done many more things than usual?</label>
                     <select id="q7">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="q8">Have you ever been much more interested in sex than usual?</label>
+                    <select id="q8">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="q9">Have you ever had periods of time when you spent a lot of money or went on shopping
+                        sprees?</label>
+                    <select id="q9">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
                 </li>
             </ol>
@@ -268,8 +265,6 @@
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
-
-
 </body>
 
 </html>

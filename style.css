@@ -62,7 +62,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-    color: #f9fffe;
+    color: #013206dc;
 }
 
 ul.navbar {
@@ -199,30 +199,32 @@ ul.navbar li a {
     /* Dark green color with a slightly lighter shade on hover */
 }
 
-.quiz {
-    position: absolute;
-    top: 75rem;
-    left: 738px;
+.image-container {
+    display: flex;
+    margin-left: 330px;
+    margin-top: 50px;
 }
 
-.quiz h1 {
-    font-size: 24px;
-    color: #000000;
+.image-box {
+    margin-right: 150px; /* Adjust as needed for spacing between images */
 }
 
-.stress {
-    position: absolute;
-    top: 75rem;
-    left: 1070px;
+.image-box img {
+    width: 200px; /* Adjust as needed for image size */
+    height: auto; /* To maintain aspect ratio */
 }
 
-.stress h1 {
-    font-size: 24px;
-    color: #000000;
+.image-box p {
+    margin-top: 10px;
 }
+
+.image-box button {
+    margin-top: 10px;
+}
+
 
 button {
-    background-color: #01c16a;
+    background-color: #005915db;
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -233,14 +235,14 @@ button {
 }
 
 button:hover {
-    background-color: #00691a;
+    background-color: #002a0a7d;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     position: absolute;
-    top: 90em;
+    top: 120em;
     width: 100%;
 }
 

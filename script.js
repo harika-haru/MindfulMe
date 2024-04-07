@@ -156,3 +156,162 @@ function toggleTopic(topicId) {
     }
 }
 // therapy
+document.getElementById('phq9Form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    let totalScore = 0;
+  
+    // Iterate through each question, calculate total score
+    for (let i = 1; i <= 9; i++) {
+      let value = parseInt(document.getElementById('q' + i).value);
+      totalScore += value;
+    }
+  
+    // Interpret the score
+    let interpretation;
+    if (totalScore >= 0 && totalScore <= 4) {
+      interpretation = 'Minimal depression';
+    } else if (totalScore >= 5 && totalScore <= 9) {
+      interpretation = 'Mild depression';
+    } else if (totalScore >= 10 && totalScore <= 14) {
+      interpretation = 'Moderate depression';
+    } else if (totalScore >= 15 && totalScore <= 19) {
+      interpretation = 'Moderately severe depression';
+    } else {
+      interpretation = 'Severe depression';
+    }
+  
+    // Display result
+    document.getElementById('result').innerText = `Your total score is ${totalScore}. Interpretation: ${interpretation}`;
+  });
+
+  // anxiety
+  document.getElementById('gad7Form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    let totalScore = 0;
+  
+    // Iterate through each question, calculate total score
+    for (let i = 1; i <= 7; i++) {
+      let value = parseInt(document.getElementById('q' + i).value);
+      totalScore += value;
+    }
+  
+    // Interpret the score
+    let interpretation;
+    if (totalScore >= 0 && totalScore <= 4) {
+      interpretation = 'Minimal anxiety';
+    } else if (totalScore >= 5 && totalScore <= 9) {
+      interpretation = 'Mild anxiety';
+    } else if (totalScore >= 10 && totalScore <= 14) {
+      interpretation = 'Moderate anxiety';
+    } else {
+      interpretation = 'Severe anxiety';
+    }
+  
+    // Display result
+    document.getElementById('result').innerText = `Your total score is ${totalScore}. Interpretation: ${interpretation}`;
+  });
+
+  //stress
+  document.getElementById('stressAssessmentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    let totalScore = 0;
+  
+    // Iterate through each question, calculate total score
+    for (let i = 1; i <= 2; i++) { // Adjust the range if you add more questions
+      let value = parseInt(document.getElementById('q' + i).value);
+      totalScore += value;
+    }
+  
+    // Interpret the score
+    let interpretation;
+    if (totalScore >= 0 && totalScore <= 4) {
+      interpretation = 'Low stress';
+    } else if (totalScore >= 5 && totalScore <= 8) {
+      interpretation = 'Moderate stress';
+    } else if (totalScore >= 9 && totalScore <= 12) {
+      interpretation = 'High stress';
+    } else {
+      interpretation = 'Very high stress';
+    }
+  
+    // Display result
+    document.getElementById('result').innerText = `Your total score is ${totalScore}. Interpretation: ${interpretation}`;
+  });
+
+  //ptsd
+  document.getElementById('ptsdChecklistForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    let totalScore = 0;
+  
+    // Iterate through each question, calculate total score
+    for (let i = 1; i <= 2; i++) { // Adjust the range if you add more questions
+      let value = parseInt(document.getElementById('q' + i).value);
+      totalScore += value;
+    }
+  
+    // Interpret the score
+    let interpretation;
+    if (totalScore >= 0 && totalScore <= 7) {
+      interpretation = 'Likely no PTSD';
+    } else if (totalScore >= 8 && totalScore <= 14) {
+      interpretation = 'Possible PTSD';
+    } else {
+      interpretation = 'Likely PTSD';
+    }
+  
+    // Display result
+    document.getElementById('result').innerText = 'Your total score is ${totalScore}. Interpretation: ${interpretation}';
+  });
+
+  //bipolar
+  document.getElementById('bipolarScreeningForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    let totalScore = 0;
+  
+    // Iterate through each question, calculate total score
+    for (let i = 1; i <= 2; i++) { // Adjust the range if you add more questions
+      let value = parseInt(document.getElementById('q' + i).value);
+      totalScore += value;
+    }
+  
+    // Interpret the score
+    let interpretation;
+    if (totalScore >= 3) {
+      interpretation = 'Positive for possible bipolar disorder';
+    } else {
+      interpretation = 'Negative for possible bipolar disorder';
+    }
+  
+    // Display result
+    document.getElementById('result').innerText = 'Your total score is ${totalScore}. Interpretation: ${interpretation}';
+  });
+  //sub
+  document.getElementById('substanceAbuseScreeningForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    let totalScore = 0;
+  
+    // Iterate through each question, calculate total score
+    for (let i = 1; i <= 2; i++) { // Adjust the range if you add more questions
+      let value = parseInt(document.getElementById('q' + i).value);
+      totalScore += value;
+    }
+  
+    // Interpret the score
+    let interpretation;
+    if (totalScore >= 8) {
+      interpretation = 'Possibly hazardous drinking';
+    } else if (totalScore >= 4 && totalScore <= 7) {
+      interpretation = 'Probably hazardous drinking';
+    } else {
+      interpretation = 'Low-risk drinking';
+    }
+  
+    // Display result
+    document.getElementById('result').innerText = 'Your total score is ${totalScore}. Interpretation: ${interpretation}';
+  });

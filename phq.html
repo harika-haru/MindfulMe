@@ -112,7 +112,8 @@
             left: 2%;
         }
 
-        .container-str {
+
+        .container-phq {           
             max-width: 600px;
             margin: 100px auto;
             padding: 20px;
@@ -135,7 +136,7 @@
         }
 
         li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         label {
@@ -145,9 +146,9 @@
 
         select {
             width: 100%;
-            padding: 10px;
+            padding: 8px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 4px;
             font-size: 16px;
         }
 
@@ -159,7 +160,7 @@
             background-color: #007bff;
             color: #fff;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
         }
 
@@ -172,7 +173,7 @@
             text-align: center;
         }
     </style>
-     <nav>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#About">About</a></li>
@@ -186,80 +187,94 @@
     <!--Logo-->
     <div class="logo">
     </div>
-
-    <div class="container-str">
-        <h1>Stress Assessment</h1>
-        <form id="stressAssessmentForm">
-            <p>Please rate how often you have experienced each of the following situations over the past month:</p>
+    <div class="container-phq">
+        <h1>PHQ-9 Questionnaire</h1>
+        <form id="phq9Form">
+            <p>Over the last 2 weeks, how often have you been bothered by the following problems?</p>
             <ol>
                 <li>
-                    <label for="q1">Work-related stress:</label>
+                    <label for="q1">Little interest or pleasure in doing things:</label>
                     <select id="q1">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q2">Financial stress:</label>
+                    <label for="q2">Feeling down, depressed, or hopeless:</label>
                     <select id="q2">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q3">Family-related stress:</label>
+                    <label for="q3">Trouble falling or staying asleep, or sleeping too much:</label>
                     <select id="q3">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q4">Relationship-related stress:</label>
+                    <label for="q4">Feeling tired or having little energy:</label>
                     <select id="q4">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q5">Health-related stress:</label>
+                    <label for="q5">Poor appetite or overeating:</label>
                     <select id="q5">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q6">Academic-related stress (if applicable):</label>
+                    <label for="q6">Feeling bad about yourself - or that you are a failure or have let yourself or your
+                        family down:</label>
                     <select id="q6">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
                 <li>
-                    <label for="q7">Other stressors:</label>
+                    <label for="q7">Trouble concentrating on things, such as reading the newspaper or watching
+                        television:</label>
                     <select id="q7">
-                        <option value="0">Never</option>
-                        <option value="1">Rarely</option>
-                        <option value="2">Sometimes</option>
-                        <option value="3">Often</option>
-                        <option value="4">Very often</option>
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="q8">Moving or speaking so slowly that other people could have noticed? Or the opposite -
+                        being so fidgety or restless that you have been moving around a lot more than usual:</label>
+                    <select id="q8">
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="q9">Thoughts that you would be better off dead, or of hurting yourself in some
+                        way:</label>
+                    <select id="q9">
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
                     </select>
                 </li>
             </ol>
@@ -268,7 +283,6 @@
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
-
 
 </body>
 
