@@ -315,3 +315,5 @@ document.getElementById('phq9Form').addEventListener('submit', function(event) {
     // Display result
     document.getElementById('result').innerText = 'Your total score is ${totalScore}. Interpretation: ${interpretation}';
   });
+  //FAQ
+  // Sample FAQ data for demonstration purposes
